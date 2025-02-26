@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "../Layout/Layout";
 
-const Appointements = () => {
+const Appointments = () => {
   return (
     <Layout>
-      <div>Appointements</div>
+      <div>Appointments</div>
     </Layout>
   );
 };
 
-export default Appointements;
+export default Appointments;

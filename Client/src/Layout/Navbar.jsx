@@ -18,7 +18,7 @@ import { FaHistory } from "react-icons/fa";
 import { IoLogOut } from "react-icons/io5";
 
 const Navbar = () => {
-  // -------------------------------------------------- USE STATES -------------------------------------------
+  // ---------------------- USE STATES ------------------------------------
   const [menuButton, setMenuButton] = useState(false);
   const [token, setToken] = useState(true);
   const navigate = useNavigate();
@@ -26,12 +26,12 @@ const Navbar = () => {
   return (
     <>
       <div className=" flex justify-between items-center w-full  px-3 sm:px-6 py-4 bg-blue-100 shadow-md">
-        {/* --------------------------------------- Logo Section -------------------------------------------- */}
+        {/* ---------------------------- Logo Section ---------------- */}
         <div className="w-32 md:w-36">
           <img src={images.logo} alt="logo" />
         </div>
 
-        {/*----------------------------------- Navigation Links -----------------------------------------------*/}
+        {/*-------------------- Navigation Links -----------------------------*/}
         <nav className="hidden md:flex md:space-x-7 lg:space-x-10 text-lg font-medium text-gray-700">
           <NavLink to={"/"} className="hover:text-black transition">
             Home
@@ -47,13 +47,13 @@ const Navbar = () => {
           </NavLink>
         </nav>
 
-        {/* ------------------------------------------ Check Login Status --------------------------------- */}
+        {/* ---------------------- Check Login Status --------------------- */}
         {token ? (
-          <div className="flex items-center  group relative">
-            {/* ----------------------------------------- Profile Icon ------------------------------- */}
+          <div className="flex items-center   group relative">
+            {/* ----------------------- Profile Icon -------------------- */}
             <Avatar src="/broken-image.jpg" />
             <RiArrowDropDownLine className="text-4xl" />
-            {/* --------------------------------------- Profile Menu ------------------------------------------ */}
+            {/* -------------------- Profile Menu -------------------------- */}
             <div className="absolute top-0 -right-5 pt-14 text-base font-medium z-20 hidden group-hover:block ">
               <ul className="flex flex-col  gap-2 w-fit bg-blue-50 px-5 py-3 ">
                 <NavLink
@@ -80,10 +80,10 @@ const Navbar = () => {
                 </NavLink>
               </ul>
             </div>
-            {/* -------------------------------------------------------------------------------------------- */}
+            {/* -------------------------------------------------------- */}
           </div>
         ) : (
-          // ------------------------------------------ SignIn & Register ----------------------------------------
+          // ------------------------ SignIn & Register ----------------------
 
           <div className="hidden md:flex gap-5">
             <Button
@@ -107,9 +107,9 @@ const Navbar = () => {
         />
       </div>
 
-      {/* -------------------------------------------- MOBILE MENU -------------------------------------- */}
+      {/* ---------------------- MOBILE MENU ------------------------ */}
       {menuButton && (
-        <div className=" md:hidden fixed w-[100%] right-0 top-0 bottom-0 overflow-hidden bg-blue-50 ease-in-out  transition-all px-6 py-6">
+        <div className=" md:hidden fixed z-10 w-[100%] right-0 top-0 bottom-0 overflow-hidden bg-blue-50 ease-in-out  transition-all px-6 py-6">
           <div className="flex justify-end cursor-pointer">
             <RxCross2
               className=" text-3xl text-gray-800"

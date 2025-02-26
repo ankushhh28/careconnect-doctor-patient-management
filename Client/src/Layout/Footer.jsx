@@ -10,11 +10,11 @@ const Footer = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative -bottom-72 md:-bottom-80 lg:-bottom-96  w-full h-auto bg-blue-100 px-8 sm:px-12 md:px-16 lg:px-20 py-6">
-      {/* ----------------------------- Footer Content ----------------------------------- */}
+    <div className="relative bottom-0   w-full h-auto bg-blue-100 px-8 sm:px-12 md:px-16 lg:px-20 py-6">
+      {/* ------------------------- Footer Content ------------------ */}
 
       <div className="flex justify-between flex-wrap gap-6 ">
-        {/* --------------------------- LOGO+CONTENT ------------------------------------- */}
+        {/* --------------------------- LOGO+CONTENT -------------------- */}
         <div className="flex flex-col gap-2">
           <img src={images.logo} alt="logo" className="w-32 sm:w-36 md:w-44" onClick={()=>navigate('/')}/>
           <p className="text-gray-700 max-w-md sm:text-base">
@@ -25,7 +25,7 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* ------------------------------------------------------------------------------ */}
+        {/* ----------------------------------------------------------- */}
         <div className="flex flex-col gap-2 sm:gap-6">
           <h1 className="text-lg sm:text-2xl text-gray-800 font-semibold uppercase">
             Company
@@ -57,9 +57,9 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        {/* ------------------------------------------------------------------------------ */}
+        {/* ---------------------------------------------------------- */}
 
-        {/* ------------------------------------------------------------------------------ */}
+        {/* ---------------------------------------------------------- */}
         <div className="flex flex-col gap-6">
           <h1 className="text-lg sm:text-2xl text-gray-800 font-semibold uppercase">
             Get In Touch
@@ -78,7 +78,7 @@ const Footer = () => {
               ankushhh28@gmail.com
             </a>
           </div>
-          {/* ----------------------------- SOCIAL-MEDIA ---------------------------------- */}
+          {/* ---------------------- SOCIAL-MEDIA ---------------------- */}
           <div className="flex flex-col gap-2 mt-2 justify-center items-start">
             <p className="text-lg sm:text-xl text-gray-800 font-semibold uppercase">
               Social media
@@ -100,14 +100,14 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          {/* -------------------------------------------------------------------------------- */}
+          {/* ------------------------------------------------------- */}
         </div>
-        {/* ----------------------------------------------------------------------------------- */}
+        {/* --------------------------------------------------------- */}
       </div>
 
-      {/* ---------------------------------- Copyright part --------------------------------------- */}
+      {/* --------------------- Copyright part --------------------------- */}
       <div className="mt-12 sm:mt-16">
-        <hr class="border-t-1 border-gray-800 w-4/5 my-3 mx-auto rounded-lg" />
+        <hr className="border-t-1 border-gray-800 w-4/5 my-3 mx-auto rounded-lg" />
         <h1 className="flex items-center justify-center text-gray-700 tracking-wide">
           <span className="mr-1">
             <CopyrightIcon />
