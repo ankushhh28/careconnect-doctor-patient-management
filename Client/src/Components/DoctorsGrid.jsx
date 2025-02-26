@@ -1,26 +1,27 @@
 import { Button } from "@mui/material";
-import { doctors } from "../assets/assets";
 import { FaArrowRight } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { useContext, useEffect } from "react";
+import { AppContext } from "../Context/AppContext";
 
 const DoctorsGrid = () => {
   // --------------------------------------------
   const navigate = useNavigate();
+  const { doctors } = useContext(AppContext);
   // --------------------------------------------
 
   return (
-    <div className="flex flex-col gap-8  justify-center items-center  px-6 sm:px-12 md:px-20 lg:px-24 py-12">
-
+    <div className="flex flex-col gap-8  justify-center items-center  px-6 sm:px-12 md:px-20 lg:px-24 py-10">
       {/* ---------------------- HEADING ---------------------- */}
-      <h1 className="text-3xl sm:text-4xl  text-gray-800 font-bold underline underline-offset-4">
+      <h1 className="text-3xl sm:text-5xl  text-gray-800 font-bold">
         Trusted Doctors for{" "}
-        <span className="text-blue-600 underline underline-offset-4 decoration-blue-600">
+        <span className="text-blue-600 decoration-blue-600">
           You!
         </span>
       </h1>
 
       {/* ----------------- DESCRIPTION ----------------------- */}
-      <p className="text-lg sm:text-xl max-w-3xl text-center text-gray-700">
+      <p className="text-lg  max-w-3xl text-center text-gray-700">
         Browse and book appointments with top-rated doctors across various
         specialties. Get the right medical care from trusted professionals,
         anytime you need
@@ -54,7 +55,10 @@ const DoctorsGrid = () => {
 
       {/* ---------------------- BUTTON -------------------------- */}
       <Button
-        onClick={() => navigate("/doctors")}
+        onClick={() => {
+          navigate("/doctors");
+          scrollTo(0, 0);
+        }}
         variant="contained"
         className="flex justify-center items-center gap-2 px-3 sm:px-4 py-2 w-2/5 sm:w-fit text-lg font-medium  rounded-lg shadow-md bg-blue-500 hover:opacity-95 hover:scale-95 transition-all duration-300 text-nowrap normal-case"
       >

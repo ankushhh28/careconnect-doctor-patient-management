@@ -1,6 +1,7 @@
 import logo from "../assets/logo.png";
 import banner from "../assets/banner.png";
 import home from "../assets/home.png";
+import home2 from '../assets/home2.png'
 import doc1 from "./doc1.png";
 import doc2 from "./doc2.png";
 import doc3 from "./doc3.png";
@@ -27,6 +28,7 @@ export const images = {
   logo,
   home,
   banner,
+  home2
 };
 
 export const specialityData = [

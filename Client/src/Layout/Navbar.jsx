@@ -52,7 +52,6 @@ const Navbar = () => {
           <div className="flex items-center   group relative">
             {/* ----------------------- Profile Icon -------------------- */}
             <Avatar src="/broken-image.jpg" />
-            <RiArrowDropDownLine className="text-4xl" />
             {/* -------------------- Profile Menu -------------------------- */}
             <div className="absolute top-0 -right-5 pt-14 text-base font-medium z-20 hidden group-hover:block ">
               <ul className="flex flex-col  gap-2 w-fit bg-blue-50 px-5 py-3 ">
@@ -96,7 +95,7 @@ const Navbar = () => {
               className="px-5 py-2 bg-blue-500 text-white rounded-md shadow hover:bg-blue-600  transition"
               onClick={() => navigate("/register")}
             >
-              Register
+              Sign up
             </Button>
           </div>
         )}
@@ -176,7 +175,7 @@ const Navbar = () => {
               <span className="mr-3">
                 <HowToRegIcon />
               </span>
-              Register
+              Sign up
             </Button>
           </div>
         </div>

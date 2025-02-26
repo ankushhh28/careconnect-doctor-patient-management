@@ -8,10 +8,11 @@ import Register from "./Pages/Register";
 import ForgotPassword from "./Pages/ForgotPassword";
 import Login from "./Pages/Login";
 import About from "./Pages/About";
+import AppContextProvider from "./Context/AppContext";
 
 const App = () => {
   return (
-    <>
+    <AppContextProvider>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -26,7 +27,7 @@ const App = () => {
           <Route path="/forgot-password" element={<ForgotPassword />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </AppContextProvider>
   );
 };
 

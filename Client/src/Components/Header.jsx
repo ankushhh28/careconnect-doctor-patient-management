@@ -5,34 +5,39 @@ import { images } from "../assets/assets";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
-  const navigate= useNavigate();
+  const navigate = useNavigate();
   return (
-    <div className="flex flex-col md:flex-row  gap-10 sm:gap-14 md:gap-16  px-6 sm:px-12 md:px-20 lg:px-24 py-12 md:py-16 bg-gradient-to-br from-white via-blue-50 to-blue-200  w-full h-auto ">
+    <div className="flex h-auto w-full flex-col gap-10 bg-gradient-to-br from-white via-blue-50 to-blue-200 px-6 py-12 sm:gap-14 sm:px-12 md:flex-row md:gap-16 md:px-20 md:py-16 lg:px-24">
       {/* ----------------- Left Section ----------------- */}
-      <div className="w-full md:w-1/2 space-y-6 sm:space-y-8 md:space-y-10 sm:mt-6 ">
-        <h1 className="text-3xl sm:text-5xl font-bold text-gray-900 leading-snug tracking-normal">
+      <div className="w-full space-y-6 sm:mt-6 sm:space-y-8 md:w-1/2 md:space-y-10">
+        <h1 className="text-3xl font-bold leading-snug tracking-normal text-gray-900 sm:text-5xl">
           Get Consult with our <span className="text-blue-600">Experts!</span>
         </h1>
 
-        <p className="text-gray-700 text-base sm:text-lg md:text-xl sm:max-w-xl md:w-full ">
+        <p className="text-lg text-gray-700 sm:max-w-xl sm:text-lg md:w-full md:text-xl">
           Connect with top medical professionals for personalized consultations.
           CareConnect ensures seamless appointments, expert guidance, and a
           hassle-free healthcare experience.
         </p>
 
         {/* ------------------- Buttons Section --------------------------- */}
-        <div className="flex flex-col gap-4 justify-center items-center sm:flex-row md:flex-col md:items-start lg:flex-row lg:justify-start">
+        <div className="flex flex-col items-center justify-center gap-4 sm:flex-row md:flex-col md:items-start lg:flex-row lg:justify-start">
           <Button
             variant="outlined"
             color="primary"
-            className="flex justify-center items-center gap-2 px-3 sm:px-4 py-2 w-4/5 sm:w-fit text-lg font-medium text-nowrap rounded-lg border-2 border-blue-600 hover:bg-blue-600 hover:text-white transition duration-300 "
+            className="flex w-4/5 items-center justify-center gap-2 text-nowrap rounded-lg border-2 border-blue-600 px-3 py-2 text-lg font-medium transition duration-300 hover:bg-blue-600 hover:text-white sm:w-fit sm:px-4"
           >
             Our Services <MdOutlineMedicalServices />
           </Button>
-          <Button  onClick={() => document.getElementById("speciality").scrollIntoView({ behavior: "smooth" })}
+          <Button
+            onClick={() =>
+              document
+                .getElementById("speciality")
+                .scrollIntoView({ behavior: "smooth" })
+            }
             variant="contained"
             color="primary"
-            className="flex justify-center items-center gap-2 px-3 sm:px-4 py-2 w-4/5 sm:w-fit text-lg font-medium  rounded-lg shadow-md hover:bg-blue-600 transition duration-300 text-nowrap "
+            className="flex w-4/5 items-center justify-center gap-2 text-nowrap rounded-lg px-3 py-2 text-lg font-medium shadow-md transition duration-300 hover:bg-blue-600 sm:w-fit sm:px-4"
           >
             Book Appointment <FaArrowRight />
           </Button>
@@ -40,11 +45,11 @@ const Header = () => {
       </div>
 
       {/* ----------------- Right Section ----------------- */}
-      <div className="w-full md:w-1/2 flex  justify-center md:items-center ">
+      <div className="flex w-full justify-center md:w-1/2 md:items-center">
         <img
           src={images.home}
           alt="Healthcare"
-          className="w-full h-full md:w-80 md:h-80 lg:w-96 lg:h-96  object-cover  rounded-full bg-blue-300 shadow-lg md:backdrop-blur-md"
+          className="h-full w-full rounded-full bg-blue-300 object-cover shadow-lg md:h-80 md:w-80 md:backdrop-blur-md lg:h-96 lg:w-96"
         />
       </div>
     </div>

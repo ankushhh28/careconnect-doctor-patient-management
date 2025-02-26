@@ -10,14 +10,19 @@ const Footer = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative bottom-0   w-full h-auto bg-blue-100 px-8 sm:px-12 md:px-16 lg:px-20 py-6">
+    <div className="relative bottom-0 mt-10 h-auto w-full bg-gray-900 px-8 py-8 sm:px-12 md:px-16 lg:px-20">
       {/* ------------------------- Footer Content ------------------ */}
 
-      <div className="flex justify-between flex-wrap gap-6 ">
+      <div className="flex flex-wrap justify-between gap-6">
         {/* --------------------------- LOGO+CONTENT -------------------- */}
         <div className="flex flex-col gap-2">
-          <img src={images.logo} alt="logo" className="w-32 sm:w-36 md:w-44" onClick={()=>navigate('/')}/>
-          <p className="text-gray-700 max-w-md sm:text-base">
+          <img
+            src={images.logo}
+            alt="logo"
+            className="w-32 sm:w-36 md:w-44"
+            onClick={() => navigate("/")}
+          />
+          <p className="max-w-md text-blue-50 sm:text-base">
             Careconnect is dedicated to providing seamless healthcare management
             for patients and doctors. Our mission is to enhance communication,
             simplify appointments, and improve overall patient care, ensuring
@@ -27,31 +32,31 @@ const Footer = () => {
 
         {/* ----------------------------------------------------------- */}
         <div className="flex flex-col gap-2 sm:gap-6">
-          <h1 className="text-lg sm:text-2xl text-gray-800 font-semibold uppercase">
-            Company
+          <h1 className="text-lg font-semibold uppercase text-blue-400 sm:text-2xl">
+            Links
           </h1>
-          <div className="space-y-1 text-gray-700 font-medium text-base">
+          <div className="space-y-1 text-base font-medium text-blue-50">
             <p
               onClick={() => navigate("/")}
-              className="hover:text-gray-900 cursor-pointer"
+              className="cursor-pointer hover:text-blue-300"
             >
               Home
             </p>
             <p
               onClick={() => navigate("/doctors")}
-              className="hover:text-gray-900 cursor-pointer"
+              className="cursor-pointer hover:text-blue-300"
             >
               Our Doctors
             </p>
             <p
               onClick={() => navigate("/about")}
-              className="hover:text-gray-900 cursor-pointer"
+              className="cursor-pointer hover:text-blue-300"
             >
               About us
             </p>
             <p
               onClick={() => navigate("/contact")}
-              className="hover:text-gray-900 cursor-pointer"
+              className="cursor-pointer hover:text-blue-300"
             >
               Contact us
             </p>
@@ -61,17 +66,21 @@ const Footer = () => {
 
         {/* ---------------------------------------------------------- */}
         <div className="flex flex-col gap-6">
-          <h1 className="text-lg sm:text-2xl text-gray-800 font-semibold uppercase">
-            Get In Touch
+          <h1 className="text-lg font-semibold uppercase text-blue-400 sm:text-2xl">
+            Contact us
           </h1>
-          <div className="space-y-2 text-gray-700 font-medium text-base">
-            <p className="hover:text-gray-900 flex items-center">
+          <div className="space-y-2 text-base font-medium text-blue-50">
+            <p className="flex items-center hover:text-blue-300">
               <span className="mr-2">
                 <FaFax />
               </span>
               +1 (555) 123-4567
             </p>
-            <a href="mailto:ankushhh28@gmail.com" target="_blank" className="hover:text-gray-900 flex items-center">
+            <a
+              href="mailto:ankushhh28@gmail.com"
+              target="_blank"
+              className="flex items-center hover:text-blue-300"
+            >
               <span className="mr-2">
                 <MdEmail />
               </span>
@@ -79,24 +88,24 @@ const Footer = () => {
             </a>
           </div>
           {/* ---------------------- SOCIAL-MEDIA ---------------------- */}
-          <div className="flex flex-col gap-2 mt-2 justify-center items-start">
-            <p className="text-lg sm:text-xl text-gray-800 font-semibold uppercase">
+          <div className="mt-2 flex flex-col items-start justify-center gap-2">
+            <p className="text-lg font-semibold uppercase text-blue-400 sm:text-xl ">
               Social media
             </p>
-            <div className="flex items-center justify-center gap-4  text-gray-700">
+            <div className="flex items-center justify-center gap-4 text-gray-700">
               <a href="https://www.instagram.com/ankush._.28/" target="_blank">
-                <InstagramIcon className="text-2xl sm:text-3xl hover:text-[#E4405F] hover:scale-110 transition duration-300 cursor-pointer" />
+                <InstagramIcon className="cursor-pointer text-2xl text-blue-50 transition duration-300 hover:scale-110 hover:text-[#E4405F] sm:text-3xl" />
               </a>
 
               <a href="https://wa.me/917869863059" target="_blank">
-                <WhatsAppIcon className="text-2xl sm:text-3xl hover:text-[#25D366] hover:scale-110 transition duration-300 cursor-pointer" />
+                <WhatsAppIcon className="cursor-pointer text-2xl text-blue-50 transition duration-300 hover:scale-110 hover:text-[#25D366] sm:text-3xl" />
               </a>
 
               <a
                 href="https://www.linkedin.com/in/ankush-sanodiya-1b40a7261/"
                 target="_blank"
               >
-                <LinkedInIcon className="text-2xl sm:text-3xl hover:text-[#0077B5] hover:scale-110 transition duration-300 cursor-pointer" />
+                <LinkedInIcon className="cursor-pointer text-2xl text-blue-50 transition duration-300 hover:scale-110 hover:text-[#0077B5] sm:text-3xl" />
               </a>
             </div>
           </div>
@@ -106,13 +115,15 @@ const Footer = () => {
       </div>
 
       {/* --------------------- Copyright part --------------------------- */}
-      <div className="mt-12 sm:mt-16">
-        <hr className="border-t-1 border-gray-800 w-4/5 my-3 mx-auto rounded-lg" />
-        <h1 className="flex items-center justify-center text-gray-700 tracking-wide">
+      <div className="mt-12 sm:mt-8">
+        <hr className="border-t-1 mx-auto my-3 w-4/5 rounded-lg border-blue-50" />
+        <h1 className="flex items-center justify-center text-sm tracking-wide text-gray-400">
           <span className="mr-1">
             <CopyrightIcon />
           </span>
-          2025 Careconnect. All rights reserved
+          2025 &nbsp;{" "}
+          <span className="text-blue-300 underline">Careconnect</span>&nbsp; All
+          rights reserved
         </h1>
       </div>
     </div>
