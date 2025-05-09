@@ -1,45 +1,45 @@
-# 🩺 Doctor-Patient Management Platform
+# 🩺 CareConnect
 
-A full-stack web application built to streamline the doctor-patient interaction process by enabling appointment booking, profile-based doctor discovery, and earnings management, along with a secure admin panel for overall platform oversight.
+**CareConnect** is a full-stack Doctor-Patient Management Platform designed to simplify healthcare interactions. It enables patients to seamlessly book consultations, doctors to manage appointments and earnings, and admins to oversee the system — all through a secure and user-friendly interface.
 
 ## 🚀 Features
 
-### 🧑‍⚕️ Doctor Dashboard
+### 👩‍⚕️ Doctor Dashboard
 - View and manage patient appointments
-- Track total earnings and payment history
-- Maintain personal profile and availability
-
-### 👨‍💼 Admin Panel
-- Oversee all users (doctors & patients)
-- Monitor system activities
-- Manage platform-wide settings
+- Track earnings and payment history
+- Manage personal profile and availability
 
 ### 👨‍⚕️ Patient Portal
-- Search and book consultations via doctor profiles
-- View upcoming and past appointments
-- Manage personal profile
+- Discover doctors via searchable profiles
+- Book and view consultations
+- Manage personal health profile
 
-### 🔐 Authentication & Access Control
-- Secure login and registration
-- Role-based access (doctor, patient, admin)
-- JWT-based authentication with protected routes
+### 🛠️ Admin Panel
+- Oversee doctors and patients
+- Monitor system usage and appointments
+- Control platform-wide operations
 
-### 💳 Payment Integration
-- Integrated **Razorpay** payment gateway
-- Patients can securely pay for consultations
-- Doctors can track earnings in real-time
+### 🔐 Secure Authentication
+- Role-based access: Doctor, Patient, Admin
+- JWT-based login/logout flow
+- Secure, private access to respective dashboards
 
-### 🎨 Responsive UI
-- Monochromatic, clean, and accessible interface
-- Optimized for all screen sizes (mobile, tablet, desktop)
+### 💳 Payment Gateway
+- Razorpay integration for online payments
+- Patients can pay consultation fees securely
+- Doctors track income in real-time
 
-## 🛠️ Tech Stack
+### 🎨 Clean & Responsive UI
+- Monochromatic, consistent theme
+- Mobile-friendly, accessible design
+- Seamless experience across all devices
 
-- **Frontend:** React.js
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB (NoSQL)
-- **Authentication:** JWT, bcrypt.js
-- **Payments:** Razorpay
-- **Styling:** TailwindCSS (based on implementation)
+## 🧰 Tech Stack
 
+- **Frontend**: React.js  
+- **Backend**: Node.js, Express.js  
+- **Database**: MongoDB  
+- **Authentication**: JWT, bcrypt.js  
+- **Payments**: Razorpay API  
+- **Styling**: TailwindCSS (based on your implementation)
 
