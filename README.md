@@ -41,5 +41,5 @@
 - **Database**: MongoDB  
 - **Authentication**: JWT, bcrypt.js  
 - **Payments**: Razorpay API  
-- **Styling**: TailwindCSS (based on your implementation)
+- **Styling**: TailwindCSS 
 
